@@ -1,22 +1,8 @@
 {
-  "name": "electron-app",
+  "name": "wallet-app",
   "version": "0.1.0",
   "private": true,
   "homepage": "./",
-  "main": "public/electron.js",
-  "author": "authhub",
-  "description": "SSP-PWLESS-AdminConsole",
-  "build": {
-    "asar": true,
-    "appId": "com.react.electron",
-    "productName": "react-electron",
-    "files": [
-      "build/**/*"
-    ],
-    "win": {
-      "target": "nsis"
-    }
-  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -39,12 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dbuild": "npm run build && npm run electron-build",
-    "electron-build": "electron-builder --publish never",
-    "start-electron": "concurrently \"cross-env BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\"",
-    "app:dir": "electron-builder --dir",
-    "app:dist": "electron-builder"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -65,10 +46,6 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^9.1.2",
-    "cross-env": "^7.0.3",
-    "electron": "^35.1.1",
-    "electron-builder": "^26.0.12",
-    "wait-on": "^8.0.3"
+    "sass": "^1.66.0"
   }
 }
